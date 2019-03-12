@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mobile{
+  width: 276px;
+  height: 555px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: inset 0 10px 8px rgba(0, 0, 56, 0.5);
+}
+.screen{
+  position: relative;
+  background: #262626;
+  width: 256px;
+  height: 460px;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+.screen.active{
+  background: url(display.jpeg);
+  background-size: cover;
+  background-position: center;
+
+}
+.screen::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  transform: skewX(-5deg) translateX(-50%);
+}
+.home{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 170%);
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #3338;
+  cursor: pointer;
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.5);
+}
+.inner{
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%, -520px);
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background: #0009;
+  box-sizing: border-box;
+}
+.inner::before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -22px;
+  background: #0009;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.inner::after{
+  content: '';
+  position: absolute;
+  top: -2.5px;
+  left: 120%;
+  background: #0008;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.volume{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 110px;
+  left: -120px;
+}
+.volume li{
+  list-style: none;
+  width: 2px;
+  height: 30px;
+  background: #0009;
+  margin: 10px 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.silent{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 35px;
+  left: -120px;
+}
+.silent{
+  list-style: none;
+  width: 2px;
+  height: 38px;
+  background: #0009;
+  margin: 10px 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.sleep{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 35px;
+  left: 157px;
+}
+.sleep{
+  list-style: none;
+  width: 2.5px;
+  height: 50px;
+  background: #0009;
+  margin: 10px 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
